@@ -1,42 +1,41 @@
-# Shopsphere – A Modern E-commerce Platform
+# 🛍️ shopSphere
 
-**Shopsphere** is a feature-rich, scalable e-commerce web application built with React and Redux Toolkit. It delivers a smooth user experience with animated UI, protected routing, and both customer and admin flows.
+**shopSphere** is a full-featured e-commerce web application built with **React** and **Redux Toolkit**. It offers a smooth shopping experience with features like product browsing, cart management, secure checkout, and protected admin access.
 
-## Features
+---
 
-### Customer Experience
-- Product Listing & Detail Pages
-- Add to Cart (with quantity selection)
-- Wishlist Toggle
-- Framer Motion Animations & Toast Notifications
-- Breadcrumb Navigation
-- Full Checkout Flow:  
-  Shipping → Order Review → Payment → Confirmation
-- Protected Routes (based on authentication)
+## ✨ Features
 
-### Admin Experience
-- Admin Profile Dashboard
-- Inventory Management (Add, Edit, Delete Products)
-- Admin-only Route Protection
-- Role-based UI changes
+- Product listing by category
+- Product detail page with Add to Cart, Wishlist
+- Cart with quantity controls & total calculation
+- Secure checkout flow (shipping, review, payment, confirmation)
+- Admin login and access control
+- Inventory management for admins (basic setup)
+- Framer Motion animations
+- Toast notifications for UX feedback
+- Fully integrated with Redux Toolkit
 
-## Tech Stack
+---
 
-- **Frontend:** React.js, React Router DOM
-- **State Management:** Redux Toolkit with `createAsyncThunk`
-- **UI/UX:** Framer Motion, Toastify
-- **Auth Logic:** Role-based conditional rendering + Protected Routes
-- **Version Control:** Git & GitHub
+## ⚙️ Tech Stack
 
-## Screenshots
-> Add screenshot links here after uploading the project
+- **React**
+- **Redux Toolkit**
+- **React Router**
+- **Framer Motion**
+- **React Icons**
+- **Toastify**
+- **Custom CSS** (Tailwind planned)
 
-## Getting Started
+---
 
-To run this project locally:
+## 🚀 Getting Started
+
+Clone the repo and install dependencies:
 
 ```bash
-git clone https://github.com/sunainanelli/shopsphere.git
-cd shopsphere
+git clone https://github.com/sunainanelli/shopSphere.git
+cd shopSphere
 npm install
 npm start
