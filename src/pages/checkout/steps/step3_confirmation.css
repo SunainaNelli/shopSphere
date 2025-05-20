@@ -1,0 +1,49 @@
+.confirmation-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 2px solid #eee;
+    border-radius: 12px;
+    background: #fdfdfd;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  .section {
+    margin-top: 1.5rem;
+  }
+  
+  .order-id {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .delivery-estimate {
+    margin-top: 1rem;
+    font-style: italic;
+  }
+  
+  .total {
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  .home-btn {
+    display: block;
+    margin: 2rem auto 0;
+    padding: 0.6rem 1.5rem;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .home-btn:hover {
+    background-color: #0077cc;
+  }
+  
