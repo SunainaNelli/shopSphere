@@ -29,4 +29,44 @@ A responsive and modern e-commerce frontend application built using **React**, *
 
 ## 📁 Folder Structure (Simplified)
 
+src/
+├── components/
+├── features/
+│ ├── cart/
+│ ├── products/
+│ ├── auth/
+│ └── admin/
+├── pages/
+├── redux/
+├── App.jsx
+├── main.jsx
+
+
+---
+
+## 📦 Getting Started
+
+1. Clone the repo  
+   `git clone https://github.com/sunainanelli/shopSphere.git`
+
+2. Install dependencies  
+   `npm install`
+
+3. Start the server  
+   `npm run dev`
+
+---
+
+## 📌 Note
+
+- This is a frontend-only app with mock data.
+- Admin flow is UI-level only, designed for demonstration.
+
+---
+
+## 🙋‍♀️ Author
+
+**Sunaina Nelli**  
+Frontend Developer | React | Redux | JavaScript
+
 
