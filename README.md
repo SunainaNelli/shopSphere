@@ -1,6 +1,6 @@
 # 🛍️ shopSphere
 
-A responsive and modern e-commerce frontend application built using **React**, **Redux Toolkit**, and **Framer Motion**.
+A responsive and modern e-commerce frontend application built using **React**, **Redux Toolkit**, and **Framer Motion**.It supports dynamic routing, authentication, cart and checkout flows, and basic admin features.
 
 ---
 
@@ -41,6 +41,16 @@ src/
 ├── App.jsx
 ├── main.jsx
 
+
+---
+
+## Screenshots
+(Will be added soon after UI polish)
+
+---
+
+## Live Demo
+Coming soon...
 
 ---
 
