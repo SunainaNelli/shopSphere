@@ -34,15 +34,15 @@ export default function App() {
         <Header />
         <Routes>
          
-          <Route path='/' element={<Home />} />
+          
           <Route path='/shopSphere' element={<Home />} />
-          <Route path='/cart' element={<Cart />} />
-          <Route path="/login" element={<Login />} />
-          <Route path='/products' element={<Products/>} />
-          <Route path='/product/:id' element={<ProductDetail />} />
+          <Route path='/shopSphere/cart' element={<Cart />} />
+          <Route path="/shopSphere/login" element={<Login />} />
+          <Route path='/shopSphere/products' element={<Products/>} />
+          <Route path='/shopSphere/product/:id' element={<ProductDetail />} />
          
          
-          <Route path="/checkout" element={
+          <Route path="/shopSphere/checkout" element={
               <PrivateRoute>
                 <Checkout />
               </PrivateRoute>
@@ -54,7 +54,7 @@ export default function App() {
           </Route>
            
            
-          <Route path="/profile" element={
+          <Route path="/shopSphere/profile" element={
              <PrivateRoute>
                 <Profile />
              </PrivateRoute>
@@ -62,13 +62,13 @@ export default function App() {
 
           
           
-          <Route path='/admin' element={<AdminLanding />}/>
-          <Route path='/admin/profile' element={
+          <Route path='/shopSphere/admin' element={<AdminLanding />}/>
+          <Route path='/shopSphere/admin/profile' element={
             <AdminRoute>
               <AdminProfile />
             </AdminRoute>
           }/>
-          <Route path='/admin/inventory' element={
+          <Route path='/shopSphere/admin/inventory' element={
             <AdminRoute>
               <Inventory />
             </AdminRoute>
