@@ -111,4 +111,16 @@
     padding: 2px 6px;
     border-radius: 50%;
   }
-  
+
+  .checkout-button {
+    background: green;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+      background: darkgreen;
+    }
+  }

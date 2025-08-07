@@ -35,6 +35,7 @@ export default function App() {
         <Routes>
          
           <Route path='/' element={<Home />} />
+          <Route path='/shopSphere' element={<Home />} />
           <Route path='/cart' element={<Cart />} />
           <Route path="/login" element={<Login />} />
           <Route path='/products' element={<Products/>} />

@@ -1,8 +1,8 @@
-import { React } from "react";
+import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import { motion, AnimatePresence } from "framer-motion";
 import "./cart.css";
-import { Link } from "react-router-dom";
+
 import { useDispatch, useSelector } from "react-redux";
 import {
   removeFromCart,
@@ -90,6 +90,9 @@ export default function Cart() {
               >
                 Clear Cart
               </button>
+              <Link to="/checkout"
+                 className="checkout-button">Proceed to Checkout
+              </Link>
             </div>
           </AnimatePresence>
         </div>

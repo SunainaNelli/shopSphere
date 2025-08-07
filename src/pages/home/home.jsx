@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import CatProducts from "../products/categorysection";
 import {products} from '../../data/mockdata'; // Adjust path if needed
 import "./home.css";
 
@@ -8,6 +9,7 @@ import "./home.css";
 const Home = () => {
   // Pick 6 random products for featured section
   const featuredProducts = products.slice(0, 6);
+  const filteredProducts = products.filter((product) => product.category === "Fashion" || product.category === "Electronics" || product.category === "Home Decor" || product.category === "Books");
 
   return (
     <div className="home-container">
@@ -25,10 +27,10 @@ const Home = () => {
       <section className="categories-section">
         <h2>Shop by Category</h2>
         <div className="categories-grid">
-          <div className="category-card">Fashion</div>
-          <div className="category-card">Electronics</div>
-          <div className="category-card">Home Decor</div>
-          <div className="category-card">Books</div>
+          <button className="category-card">Fashion</button>
+          <button className="category-card">Electronics</button>
+          <button className="category-card">Home Decor</button>
+          <button className="category-card">Books</button>
         </div>
       </section>
 
@@ -38,9 +40,11 @@ const Home = () => {
         <div className="products-grid">
           {featuredProducts.map((product) => (
             <div key={product.id} className="product-card">
-              <img src={product.image} alt={product.name} />
-              <h3>{product.name}</h3>
-              <p>₹{product.price}</p>
+              <Link to={`/product/${product.id}`}>
+                <img src={product.image} alt={product.name} />
+                <h3>{product.name}</h3>
+                <p>₹{product.price}</p>
+              </Link>
             </div>
           ))}
         </div>
