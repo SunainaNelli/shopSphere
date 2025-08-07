@@ -32,12 +32,12 @@ export default function Header() {
     <header className="header">
       <nav className="nav-container">
         <ul className="nav-left">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/products">Products</Link></li>
+          <li><Link to="/shopSphere/">Home</Link></li>
+          <li><Link to="/shopSphere/products">Products</Link></li>
         </ul>
 
         <div className="nav-right">
-          <Link to="/cart" className="cart-link">
+          <Link to="/shopSphere/cart" className="cart-link">
             <FaShoppingCart size={20} />
             {totalQuantity > 0 && <span className="cart-count">{totalQuantity}</span>}
           </Link>
@@ -54,15 +54,15 @@ export default function Header() {
             {dropdownOpen && (
               <div className="dropdown-menu">
                 {role === "admin" && <Link to="/admin">Dashboard</Link>}
-                <Link to="/profile">Profile</Link>
-                <Link to="/checkout">Checkout</Link>
+                <Link to="/shopSphere/profile">Profile</Link>
+                <Link to="/shopSphere/checkout">Checkout</Link>
                 
                 <button onClick={handleLogout} className="logout-button">Logout</button>
               </div>
             )}
           </div>
             )}
-            {!isAuthenticated && <Link to="/login" className="login-link">Login</Link>}
+            {!isAuthenticated && <Link to="/shopSphere/login" className="login-link">Login</Link>}
         </div>
       </nav>
     </header>
