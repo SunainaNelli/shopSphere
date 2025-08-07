@@ -18,7 +18,7 @@ const Home = () => {
       <section className="hero-section">
         <h1>Discover Your Style with ShopSphere</h1>
         <p>Trendy Fashion | Cool Gadgets | Cozy Home Decor</p>
-        <Link to="/products">
+        <Link to="/shopSphere/products">
           <button>Shop Now</button>
         </Link>
       </section>
@@ -40,7 +40,7 @@ const Home = () => {
         <div className="products-grid">
           {featuredProducts.map((product) => (
             <div key={product.id} className="product-card">
-              <Link to={`/product/${product.id}`}>
+              <Link to={`/shopSphere/product/${product.id}`}>
                 <img src={product.image} alt={product.name} />
                 <h3>{product.name}</h3>
                 <p>₹{product.price}</p>
@@ -48,7 +48,7 @@ const Home = () => {
             </div>
           ))}
         </div>
-        <Link to="/products">
+        <Link to="/shopSphere/products">
           <button>View All Products</button>
         </Link>
       </section>

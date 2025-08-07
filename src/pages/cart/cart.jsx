@@ -90,7 +90,7 @@ export default function Cart() {
               >
                 Clear Cart
               </button>
-              <Link to="/checkout"
+              <Link to="/shopSphere/checkout"
                  className="checkout-button">Proceed to Checkout
               </Link>
             </div>
@@ -100,7 +100,7 @@ export default function Cart() {
         <>
           <p>Your cart is currently empty.</p>
           <p>Browse our products and add items to your cart!</p>
-          <Link to="/">Go to Products</Link>
+          <Link to="/shopSphere/products">Go to Products</Link>
         </>
       )}
     </div>

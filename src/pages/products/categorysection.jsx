@@ -20,7 +20,7 @@ export default function CatProducts({ products }) {
       <div className="product-list">
         {products.map((product) => (
           <div key={product.id} className="product-card">
-            <Link to={`/product/${product.id}`}>
+            <Link to={`/shopSphere/product/${product.id}`}>
             <img 
               src={product.image} 
               alt={product.name}

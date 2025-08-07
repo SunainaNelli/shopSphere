@@ -10,7 +10,7 @@ export default function AdminLanding() {
       <ul className="space-y-3">
         <li>
           <Link
-            to="/admin/inventory"
+            to="/shopSphere/admin/inventory"
             className="text-blue-600 hover:underline font-medium"
           >
             📦 Inventory Management
